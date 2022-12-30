@@ -41,7 +41,7 @@ const App=()=>{
         </View>
         <View style={{backgroundColor:'yellow',padding:30}}>
           <Switch value={showOnlyFavorites} onValueChange={onFavoritesChange}/>
-          <FlatList data={data} renderItem={(data)=><Text>{data.item.name}</Text>}/>
+          <FlatList data={cafeList} renderItem={(data)=><Text>{data.item.name}</Text>}/>
         </View>
       </SafeAreaView>
   )
